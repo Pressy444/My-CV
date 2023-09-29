@@ -1,8 +1,7 @@
-@media  screen and (max-width:840px) {
+body {
+    height: 100vh;
     
-.page { grid-template-rows: 33% 33% 33%;}
 }
-
 
 .page {
     
@@ -18,29 +17,32 @@
 }
 .one {
     grid-area: one;
-    background-color: rgb(85, 15, 206);
+    background-color: rgb(1, 1, 14);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "info nom photo";
     align-items: center;
+    background-image:linear-gradient(to bottom, #1a0380, #0c0700);
   
     
 }
 .two {
     grid-area: two;
     float: flex;
-    background-color: blue;
-    grid-template-rows: repeat (3, 1fr);
-    grid-template-areas: "et ex int";
+    background-color: rgb(4, 4, 51);
+    grid-template-rows: repeat (5, 1fr);
+    grid-template-areas: "un" "de" "tr" "qu" "ci";
     align-items:normal;
     justify-content: space-between;
+    color: rgb(248, 232, 6);
+    background-image:linear-gradient(to bottom, #0c0700,#1a0380);
 }
 
 
 
 .nom {
     grid-area: nom;
-   
+    color: rgb(247, 231, 8);
     font-size: 50px;
 
 }
@@ -52,7 +54,7 @@
     grid-area: info;
     font-size: 15px;
     padding-left: 15px;
-    
+    color: aquamarine;
     
 }
 
@@ -67,38 +69,51 @@ img{
 
 
 
-.et {
-    grid-area: "et";
-   height: 400px;
-
+.un {
+    grid-area: "un";
+   height: 300px;
+   padding-top: 30px;
 }
 
 
 
-.ex{
-    grid-area: "ex";
-    height: 200px;
-
+.de {
+    grid-area: "de";
+    height: 300px;
+   
 } 
 
 
-.int{
-    grid-area: "int";
-    height: 200px;
+.tr {
+    grid-area: "tr";
+    height:220px ;
 
 }
+
+
+.qu {
+    grid-area: "qu";
+    height:250px ;
+}
+
+.ci {
+    grid-area: "ci";
+    height: 250px;
+}
+
 
 .cv {
     display: grid;
     grid-area:"intro";
     float: left;
-    background-color:rgb(250, 202, 140);
+    background-color:rgb(235, 222, 166);
     padding: 50px;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: "cv""beaudoin""resto""binche""cv1""etudes""langues";
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "cv" "beaudoin" "resto" "binche" "cv1" "etudes" "langues";
     justify-content: space-between;
     list-style: circle;
     font-size: 20px;
+    
 }
 
 
@@ -136,7 +151,7 @@ img{
 }
 
 .langues {
-    grid-area:"langue";
+    grid-area:"langues";
     padding: 20px;
 }
 
