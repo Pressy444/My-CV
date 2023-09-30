@@ -1,16 +1,36 @@
+
 body {
-    height: 100vh;
-    
+    font-size: 100%;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+
+
+
+
+@media screen and (max-width: 768px) {
 }
+  
+
+
+
+
+
+
 
 .page {
     
     display: grid;
     font-family: 'Advent Pro', sans-serif;
-    grid-template-rows: 200px auto ;
+    grid-template-rows: 200px auto;
     grid-template-columns: 200px auto;
     grid-template-areas: "one one" "two intro";
-    width: 1200px;
     margin: 1OOpx auto;
     border: 1px solid;
     
@@ -22,7 +42,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "info nom photo";
     align-items: center;
-    background-image:linear-gradient(to bottom, #1a0380, #0c0700);
+    background-image:linear-gradient(to bottom, #401ae7, #0c0700);
   
     
 }
@@ -35,7 +55,7 @@ body {
     align-items:normal;
     justify-content: space-between;
     color: rgb(248, 232, 6);
-    background-image:linear-gradient(to bottom, #0c0700,#1a0380);
+    background-image:linear-gradient(to bottom, #0c0700,#401ae7);
 }
 
 
